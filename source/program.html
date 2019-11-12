@@ -30,10 +30,121 @@
   </header>
 
   <main class="program-page">
+    <h1 class="visually-hidden">Программа</h1>
 
+    <section class="blank">
+      <h2 class="blank__title">Подбор программы</h2>
+      <p class="blank__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <form action="https://echo.htmlacademy.ru" class="form">
+        <fielgset class="form__info">
+          <legend class="visually-hidden">Данные питомца</legend>
+          <label class="form__info-label">
+            <span>Имя:*</span>
+            <input type="text" class="form__info-field" placeholder="Барсик">
+          </label>
+          <label class="form__info-label">
+            <span>Вес (кг):*</span>
+            <input type="text" class="form__info-field" placeholder="7">
+          </label>
+          <label class="form__info-label">
+            <span>Возраст (лет):</span>
+            <input type="text" class="form__info-field" placeholder="7">
+          </label>
+        </fielgset>
+
+        <fielgset class="form__goal">
+          <legend class="visually-hidden">Цель</legend>
+          <p>
+            <input id="goal-first" name="goal" type="radio" class="visually-hidden" checked>
+            <label for="goal-first" class="form__goal-label">
+              <span>Похудение</span>
+            </label>
+          </p>
+          <p>
+            <input id="goal-second" name="goal" type="radio" class="visually-hidden">
+            <label for="goal-second" class="form__goal-label">
+              <span>Набор массы</span>
+            </label>
+          </p>
+          <p>
+            <input id="goal-third" name="goal" type="radio" class="visually-hidden">
+            <label for="goal-third" class="form__goal-label">
+              <span>Не знаю (Нужен ваш совет)</span>
+            </label>
+          </p>
+        </fielgset>
+
+        <fielgset class="form__contacts">
+          <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
+          <p>
+            <label class="form__contacts-label">
+              <span>E-mail:*</span>
+              <input type="text" class="form__contacts-field" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__contacts-label">
+              <span>Телефон:*</span>
+              <input type="text" class="form__contacts-field" placeholder="8 (960) 900-60-90">
+            </label>
+          </p>
+        </fielgset>
+
+        <fielgset class="form__comment">
+          <legend class="form__comment-title">Комментарий</legend>
+          <textarea class="form__comment-field">Расскажите обо всех повадках кота</textarea>
+        </fielgset>
+
+        <fielgset class="form__extra">
+          <legend class="form__extra-title">Дополнительно</legend>
+          <p>
+            <input id="extra-first" name="extra-first" type="checkbox" class="visually-hidden" checked>
+            <label for="extra-first" class="form__extra-label">
+              <span>Похудение</span>
+            </label>
+          </p>
+          <p>
+            <input id="extra-second" name="extra-second" type="checkbox" class="visually-hidden">
+            <label for="extra-second" class="form__extra-label">
+              <span>Набор массы</span>
+            </label>
+          </p>
+          <p>
+            <input id="extra-third" name="extra-third" type="checkbox" class="visually-hidden">
+            <label for="extra-third" class="form__extra-label">
+              <span>Не знаю (Нужен ваш совет)</span>
+            </label>
+          </p>
+          <p>
+            <input id="extra-fourth" name="extra-fourth" type="checkbox" class="visually-hidden">
+            <label for="extra-fourth" class="form__extra-label">
+              <span>Не знаю (Нужен ваш совет)</span>
+            </label>
+          </p>
+        </fielgset>
+
+        <div class="form__footer">
+          <button type="submit" class="form__submit">Отправить заявку</button>
+          <span class="form__note">* — Обязательные поля</span>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
+    <section class="footer__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+
+      <div class="contacts__info">
+        <p class="contacts__info-text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__info-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <a href="" class="contacts__map">
+        <img src="https://via.placeholder.com/320x365"
+          alt="Карта. Наст можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."
+          class="contacts__map-image">
+      </a>
+    </section>
+
     <a href="" class="footer__logo">
       <img src="https://via.placeholder.com/128x24" alt="Текстовый логотип магазина Кэт энерджи.">
     </a>
