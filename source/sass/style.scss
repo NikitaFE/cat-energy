@@ -1,1 +1,40 @@
-$green: green;
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Arial', sans-serif;
+  color: $dark-gray;
+
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+@import "blocks/button.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/categories.scss";
