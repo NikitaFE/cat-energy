@@ -20,3 +20,11 @@
   font-family: "Oswald", sans-serif;
   color: $black;
 }
+
+@mixin oswald-regular-dark($fz, $lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Oswald", sans-serif;
+  color: $dark;
+}

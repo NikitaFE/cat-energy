@@ -1,0 +1,29 @@
+.extra {
+  padding: 10px 0;
+}
+.extra__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include oswald-regular-black(24px, 24px);
+}
+
+.extra__list {
+  @include reset-list;
+}
+
+.extra__gift {
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra__gift-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: $white;
+}
+
