@@ -13,4 +13,10 @@
 
   background-color: $green;
   border: none;
+
+  &--gray {
+    color: $dark-gray;
+
+    background-color: $bg-gray;
+  }
 }

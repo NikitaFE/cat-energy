@@ -1,19 +1,12 @@
 .contacts__info-text {
   margin: 0;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include oswald-regular-black(16px, 20px);
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
 }
 
 .contacts__info-address {
   margin: 0;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: 'Arial', sans-serif;
-  color: $dark-gray;
+  @include arial-regular-dark-gray(14px, 20px);
 }

@@ -1,9 +1,5 @@
 .copyright__link {
   margin: 0;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: 'Arial', sans-serif;
-  color: $dark-gray;
+  @include arial-regular-dark-gray(16px, 16px);
 }

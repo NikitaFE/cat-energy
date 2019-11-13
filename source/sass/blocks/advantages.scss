@@ -2,11 +2,7 @@
   margin: 0;
   margin-bottom: 27px;
 
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 60px;
-  font-family: 'Oswald', sans-serif;
-  color: $black;
+  @include oswald-regular-black(36px, 60px);
 }
 
 .advantages__list {
@@ -18,9 +14,5 @@
   margin-bottom: 26px;
   padding-left: 80px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: 'Arial', sans-serif;
-  color: $dark-gray;
+  @include arial-regular-dark-gray(14px, 18px);
 }
