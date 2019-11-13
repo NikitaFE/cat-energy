@@ -1,0 +1,26 @@
+.advantages__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: 'Oswald', sans-serif;
+  color: $black;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item-text {
+  margin: 0;
+  margin-bottom: 26px;
+  padding-left: 80px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Arial', sans-serif;
+  color: $dark-gray;
+}
