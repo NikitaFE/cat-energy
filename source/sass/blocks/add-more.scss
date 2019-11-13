@@ -1,0 +1,24 @@
+.add-more {
+  text-align: center;
+}
+
+.add-more__btn {
+  margin-bottom: 10px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.add-more__title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  @include oswald-regular-black(16px, 20px);
+}
+
+.add-more__text {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include arial-regular-dark-gray(12px, 16px);
+}

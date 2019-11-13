@@ -1,0 +1,22 @@
+.button {
+  padding: 9px 15px 10px;
+
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+
+  background-color: $green;
+  border: none;
+
+  &--gray {
+    color: $dark-gray;
+
+    background-color: $bg-gray;
+  }
+}

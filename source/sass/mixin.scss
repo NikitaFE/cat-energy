@@ -1,0 +1,22 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin arial-regular-dark-gray($fz, $lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Arial", sans-serif;
+  color: $dark-gray;
+}
+
+@mixin oswald-regular-black($fz, $lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Oswald", sans-serif;
+  color: $black;
+}

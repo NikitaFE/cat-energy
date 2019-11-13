@@ -1,0 +1,12 @@
+.contacts__info-text {
+  margin: 0;
+
+  @include oswald-regular-black(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__info-address {
+  margin: 0;
+
+  @include arial-regular-dark-gray(14px, 20px);
+}
