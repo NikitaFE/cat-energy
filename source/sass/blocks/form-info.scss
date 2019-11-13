@@ -1,0 +1,9 @@
+.form-info__label {
+  @include oswald-regular-dark(16px, 18px);
+  text-transform: uppercase;
+}
+
+.form-info__field {
+  @include oswald-regular-dark-gray(16px, 18px);
+  text-transform: uppercase;
+}

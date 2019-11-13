@@ -1,0 +1,13 @@
+.blank__title {
+  margin: 0;
+
+  @include oswald-regular-black(36px, 60px);
+}
+
+.blank__text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include oswald-regular-black(14px, 18px);
+  text-transform: uppercase;
+}
