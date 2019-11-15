@@ -1,0 +1,46 @@
+.result {
+  padding: 27px 0 35px;
+
+  background-color: $bg-gray;
+}
+
+.result__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include oswald-regular-black(36px, 60px);
+}
+
+.result__text {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include arial-regular-dark-gray(14px, 18px);
+}
+
+.result__value-wrapper {
+  text-align: center;
+}
+
+.result__value {
+  @include oswald-regular-black(24px, 24px);
+}
+
+.result__value-title {
+  padding: 0 5px;
+
+  @include arial-regular-dark-gray(12px, 12px);
+}
+
+.result__cost {
+  margin: 0;
+  margin-bottom: 50px;
+
+  @include oswald-regular-black(14px, 20px);
+  text-align: center;
+}
+
+.result__control-text {
+  @include oswald-regular-black(16px, 20px);
+  text-transform: uppercase;
+}

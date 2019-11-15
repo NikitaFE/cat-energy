@@ -1,0 +1,8 @@
+.form-extra__title {
+  @include oswald-regular-black(24px, 24px);
+}
+
+.form-extra__label {
+  @include oswald-regular-dark(16px, 18px);
+  text-transform: uppercase;
+}

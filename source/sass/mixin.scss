@@ -5,6 +5,13 @@
   list-style: none;
 }
 
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
 @mixin arial-regular-dark-gray($fz, $lh) {
   font-weight: 400;
   font-size: $fz;
@@ -19,4 +26,20 @@
   line-height: $lh;
   font-family: "Oswald", sans-serif;
   color: $black;
+}
+
+@mixin oswald-regular-dark($fz, $lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Oswald", sans-serif;
+  color: $dark;
+}
+
+@mixin oswald-regular-dark-gray($fz, $lh) {
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Oswald", sans-serif;
+  color: $dark-gray;
 }

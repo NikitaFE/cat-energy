@@ -1,0 +1,9 @@
+.form {
+  fieldset {
+    @include reset-fieldset;
+  }
+}
+
+.form__note {
+  @include arial-regular-dark-gray(14px, 16px);
+}

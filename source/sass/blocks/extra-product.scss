@@ -1,0 +1,13 @@
+.extra-product {
+  padding: 10px 0 20px;
+}
+
+.extra-product__title {
+  margin: 0;
+
+  @include oswald-regular-dark(16px, 16px);
+}
+
+.extra-product__value {
+  @include arial-regular-dark-gray(14px, 14px);
+}

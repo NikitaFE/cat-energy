@@ -1,0 +1,8 @@
+.form-comment__title {
+  @include oswald-regular-black(24px, 24px);
+}
+
+.form-comment__field {
+  @include oswald-regular-dark-gray(16px, 18px);
+  text-transform: uppercase;
+}
