@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -34,8 +33,10 @@ a {
   display: none;
 }
 
-@import "blocks/button.scss";
+@import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/button.scss";
+@import "blocks/nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/categories.scss";
 @import "blocks/advantages.scss";

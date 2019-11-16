@@ -1,18 +1,18 @@
-.nav__menu {
-  @include reset-list;
+@media (min-width: 768px) {
+  .header {
+    padding: 24px 30px;
+  }
 }
 
-.nav__menu-link {
-  display: block;
-  padding: 22px 0;
+@media (min-width: 1300px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  color: $black;
+    min-width: 1300px;
+    padding: 54px 40px;
 
-  border-bottom: 1px solid #e6e6e6;
+    transform: translateX(-50%);
+  }
 }
