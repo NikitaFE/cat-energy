@@ -1,0 +1,28 @@
+.footer__bottom {
+  padding-top: 37px;
+
+  text-align: center;
+
+  background-color: $bg-gray;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    padding-top: 54px;
+    padding-bottom: 56px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+}
