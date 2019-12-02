@@ -1,5 +1,5 @@
 .footer__bottom {
-  padding-top: 37px;
+  padding-top: 39px;
 
   text-align: center;
 
@@ -8,7 +8,10 @@
 
 .footer__logo {
   display: block;
-  margin-bottom: 27px;
+  width: 127.8px;
+  height: 23.4px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
@@ -24,6 +27,6 @@
   }
 
   .footer__logo {
-    margin-bottom: 0;
+    margin: 0;
   }
 }

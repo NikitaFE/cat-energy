@@ -3,12 +3,59 @@
 }
 
 .categories__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  position: relative;
+
   padding: 30px 20px 19px;
 
   background-color: $bg-gray;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    @include pseudo;
+    top: 24px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    @include pseudo;
+  }
+
+  &:first-child::after {
+    top: 21px;
+    left: 30px;
+
+    width: 36px;
+    height: 50px;
+
+    background-image: url(../../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2)::after {
+    top: 35px;
+    left: 13px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url(../../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2) {
+    .categories__item-link::after {
+      right: -37px;
+    }
+  }
 }
 
 .categories__item-title {
@@ -31,8 +78,22 @@
 }
 
 .categories__item-link {
+  position: relative;
+
   @include oswald-regular-black(16px, 16px);
   text-transform: uppercase;
+
+  &::after {
+    @include pseudo;
+    top: 7px;
+    right: -35px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url(../../img/icon-right-arrow-long.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: 768px) {
@@ -46,6 +107,36 @@
     &:nth-child(2) {
       .categories__item-text {
         width: 340px;
+      }
+    }
+
+    &::before {
+      top: 92px;
+      left: 446px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &:first-child::after {
+      top: 80px;
+      left: 475px;
+
+      width: 141px;
+      height: 194px;
+    }
+
+    &:nth-child(2)::after {
+      top: 135px;
+      left: 412px;
+
+      width: 270px;
+      height: 112px;
+    }
+
+    &:nth-child(2) {
+      .categories__item-link::after {
+        right: -46px;
       }
     }
   }
@@ -72,6 +163,11 @@
   .categories__item-link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 10px;
+      right: -46px;
+    }
   }
 }
 

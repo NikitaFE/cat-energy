@@ -22,11 +22,22 @@
 
 .promo__subtile {
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 31px;
 
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo__image {
+  position: relative;
+  top: -3px;
+  left: 50%;
+
+  width: 280px;
+  height: 271px;
+
+  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
@@ -54,11 +65,20 @@
   }
 
   .promo__subtile {
-    margin-bottom: 47px;
+    margin-bottom: -533px;
 
     font-size: 20px;
     line-height: 20px;
     color: $black;
+  }
+
+  .promo__image {
+    top: 551px;
+    left: 304px;
+    z-index: -1;
+
+    width: 628px;
+    height: 580px;
   }
 }
 

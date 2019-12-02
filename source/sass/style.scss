@@ -29,6 +29,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -42,6 +48,7 @@ a {
 @import "blocks/advantages.scss";
 @import "blocks/result.scss";
 @import "blocks/contacts.scss";
+@import "blocks/contacts-info.scss";
 @import "blocks/copyright.scss";
 @import "blocks/catalog-page.scss";
 @import "blocks/catalog.scss";

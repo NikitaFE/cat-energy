@@ -17,6 +17,13 @@
 }
 
 @media (min-width: 768px) {
+  .social {
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
   .social__list {
     padding: 0;
 
