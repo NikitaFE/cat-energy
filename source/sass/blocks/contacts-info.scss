@@ -49,3 +49,16 @@
     }
   }
 }
+
+@media (min-width: 1300px) {
+  .contacts-info {
+    width: 570px;
+    padding: 64px 79px 57px 76px;
+  }
+
+  .contacts-info__address {
+    margin-top: -1px;
+
+    text-align: left;
+  }
+}

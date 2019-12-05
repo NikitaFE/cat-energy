@@ -30,3 +30,10 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1300px) {
+  .footer__bottom {
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+}

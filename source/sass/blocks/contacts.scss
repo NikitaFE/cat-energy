@@ -21,3 +21,15 @@
     overflow: hidden;
   }
 }
+
+@media (min-width: 1300px) {
+  .contacts__info {
+    top: 96px;
+    left: 110px;
+  }
+
+  .contacts__map {
+    padding-top: 0;
+    height: 400px;
+  }
+}
