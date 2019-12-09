@@ -1,12 +1,35 @@
-.contacts__info-text {
-  margin: 0;
-
-  @include oswald-regular-black(16px, 20px);
-  text-transform: uppercase;
+.contacts {
+  position: relative;
 }
 
-.contacts__info-address {
-  margin: 0;
+.contacts__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
 
-  @include arial-regular-dark-gray(14px, 20px);
+.contacts__map {
+  display: block;
+  height: 476px;
+  padding-top: 76px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    height: 596px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__info {
+    top: 96px;
+    left: 110px;
+  }
+
+  .contacts__map {
+    padding-top: 0;
+    height: 400px;
+  }
 }

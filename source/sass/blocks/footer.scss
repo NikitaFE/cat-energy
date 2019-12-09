@@ -1,0 +1,39 @@
+.footer__bottom {
+  padding-top: 39px;
+
+  text-align: center;
+
+  background-color: $bg-gray;
+}
+
+.footer__logo {
+  display: block;
+  width: 127.8px;
+  height: 23.4px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__bottom {
+    padding-top: 54px;
+    padding-bottom: 56px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__bottom {
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+}

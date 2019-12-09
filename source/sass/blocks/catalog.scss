@@ -1,3 +1,30 @@
 .catalog__list {
   @include reset-list;
 }
+
+.catalog__item {
+  margin: 0 -20px;
+  padding: 0 20px 24px;
+
+  border-top: 1px solid #ededed;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin: 0;
+    margin-bottom: 140px;
+    padding: 0 37px 40px 38px;
+
+    border: 0;
+  }
+}

@@ -12,6 +12,11 @@
   border: none;
 }
 
+@mixin pseudo {
+  content: "";
+  position: absolute;
+}
+
 @mixin arial-regular-dark-gray($fz, $lh) {
   font-weight: 400;
   font-size: $fz;
