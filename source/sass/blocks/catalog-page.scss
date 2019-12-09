@@ -1,5 +1,22 @@
 .catalog-page__title {
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 28px;
 
   @include oswald-regular-black(36px, 60px);
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__title {
+    padding-top: 35px;
+    padding-bottom: 165px;
+
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    padding-top: 154px;
+  }
 }

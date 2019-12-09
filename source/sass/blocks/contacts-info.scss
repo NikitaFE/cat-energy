@@ -22,7 +22,7 @@
   @include arial-regular-dark-gray(14px, 20px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .contacts-info {
     padding: 63px 72px 60px;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .contacts-info {
     width: 570px;
     padding: 64px 79px 57px 76px;

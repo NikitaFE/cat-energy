@@ -22,14 +22,3 @@
     background-color: $bg-gray;
   }
 }
-
-@media (min-width: 768px) {
-  .button {
-    width: 245px;
-    padding: 16px;
-    padding-left: 12px;
-
-    font-size: 20px;
-    line-height: 20px;
-  }
-}

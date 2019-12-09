@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .categories__item {
     padding: 76px 53px 59px;
 
@@ -169,7 +169,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .categories {
     padding: 80px 0 10px;
   }
