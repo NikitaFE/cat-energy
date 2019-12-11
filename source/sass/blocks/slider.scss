@@ -1,0 +1,123 @@
+.slider__image {
+  width: 320px;
+  height: 240px;
+  margin: 0 -20px 32px;
+
+  background-image: url("../../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 39px 0 44px;
+}
+
+.slider__control-text {
+  @include oswald-regular-black(16px, 20px);
+  text-transform: uppercase;
+}
+
+.slider__control-range {
+  position: relative;
+
+  width: 84px;
+  height: 14px;
+
+  background-color: $white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.slider__control-line {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+
+  display: block;
+  width: 35px;
+  height: 6px;
+
+  background-color: $green;
+  border-radius: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    height: 462px;
+    margin: 0 -30px;
+
+    background-image: linear-gradient(to right, $bg-gray 50%, #eaeaea 50%);
+  }
+
+  .slider__image {
+    position: relative;
+    top: -169px;
+
+    width: 690px;
+    height: 517px;
+    margin: 0 auto;
+
+    background-image: url("../../img/before-tablet@1x.png");
+    background-position-x: 7px;
+  }
+
+  .slider__control {
+    position: relative;
+    top: -151px;
+
+    width: 660px;
+    margin: 0 auto;
+    padding-right: 46px;
+  }
+
+  .slider__control-text {
+    font-size: 20px;
+  }
+
+  .slider__control-range {
+    width: 428px;
+    height: 6px;
+    margin-top: 3px;
+
+    background-color: #dcdcdc;
+    border: 0;
+  }
+
+  .slider__control-line {
+    top: -14px;
+    left: 200px;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $white;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::before {
+      @include pseudo;
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin: 0 -61px;
+  }
+
+  .slider__image {
+    top: -190px;
+    left: -27px;
+  }
+}
