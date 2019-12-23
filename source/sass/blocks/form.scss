@@ -1,9 +1,69 @@
 .form {
-  fieldset {
-    @include reset-fieldset;
-  }
+  padding-top: 10px;
+}
+
+.form__footer {
+  padding: 13px 0 31px;
+
+  text-align: center;
+}
+
+.form__submit {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__note {
   @include arial-regular-dark-gray(14px, 16px);
+}
+
+@media (min-width: $tablet-width) {
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 41px 31px;
+
+    text-align: left;
+  }
+
+  .form__submit {
+    width: 283px;
+    margin: 0;
+    padding: 16px 15px 16px 10px;
+
+    font-size: 20px;
+  }
+
+  .form__note {
+    display: block;
+    width: 282px;
+    padding: 16px 0;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__columns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 4px;
+  }
+
+  .form__footer {
+    padding-right: 0;
+    padding-left: 1px;
+  }
+
+  .form__submit {
+    width: 568px;
+  }
+
+  .form__note {
+    width: 569px;
+  }
 }

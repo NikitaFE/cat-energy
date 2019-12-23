@@ -1,8 +1,94 @@
+.form-comment {
+  position: relative;
+
+  @include reset-fieldset;
+  margin: 0 -20px;
+  padding: 0 20px 10px;
+
+  &::before {
+    @include pseudo;
+
+    top: 28px;
+    left: 50%;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: $green;
+
+    transform: translateX(-50%);
+  }
+}
+
 .form-comment__title {
+  width: 162px;
+  margin-bottom: 13px;
+  margin-left: -20px;
+  padding: 14px 10px 22px 19px;
+
   @include oswald-regular-black(24px, 24px);
+
+  background-color: $white;
 }
 
 .form-comment__field {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  padding-left: 14px;
+
   @include oswald-regular-dark-gray(16px, 18px);
   text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .form-comment {
+    margin: 0 -30px 20px;
+    padding: 0 30px 10px;
+
+    &::before {
+      top: 47px;
+    }
+  }
+
+  .form-comment__title {
+    width: 259px;
+    margin-bottom: 41px;
+    margin-left: 0;
+    padding: 25px 24px 35px 39px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-comment__field {
+    width: 631px;
+    height: 174px;
+    margin: 0 37px 1px 40px;
+    padding: 15px;
+    padding-left: 18px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comment {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 33px;
+  }
+
+  .form-comment__title {
+    margin-left: -40px;
+  }
+
+  .form-comment__field {
+    width: 100%;
+    margin: 0;
+  }
 }
