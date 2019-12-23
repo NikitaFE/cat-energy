@@ -59,10 +59,13 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-top: 45px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .advantages__title {
-    margin-bottom: 71px;
+    margin-bottom: 27px;
 
     font-size: 60px;
     line-height: 60px;
@@ -76,7 +79,8 @@
 
   .advantages__item {
     width: 324px;
-    margin-bottom: 88px;
+    margin-top: 44px;
+    margin-bottom: 44px;
     padding-top: 113px;
     padding-bottom: 45px;
 
@@ -133,6 +137,8 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding-top: 33px;
+
+    border-bottom: 0;
   }
 
   .advantages__item {
