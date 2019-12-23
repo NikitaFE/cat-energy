@@ -1,13 +1,50 @@
 .blank__title {
   margin: 0;
+  margin-bottom: 10px;
+  padding: 15px 0;
 
   @include oswald-regular-black(36px, 60px);
 }
 
 .blank__text {
+  width: 250px;
   margin: 0;
   margin-bottom: 10px;
 
   @include oswald-regular-black(14px, 18px);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .blank {
+    padding-bottom: 42px;
+  }
+
+  .blank__title {
+    margin-bottom: 20px;
+    margin-left: -1px;
+    padding: 35px 0;
+
+    font-size: 60px;
+  }
+
+  .blank__text {
+    width: 415px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .blank {
+    padding-bottom: 50px;
+  }
+
+  .blank__text {
+    width: 380px;
+    padding: 0;
+  }
 }

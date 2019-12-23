@@ -1,21 +1,56 @@
 .extra {
-  padding: 10px 0;
+  padding: 10px 0 35px;
 }
 
 .extra__title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 10px;
+  padding: 18px 19px 24px;
 
   @include oswald-regular-black(24px, 24px);
+
+  &::after {
+    @include pseudo;
+    top: 32px;
+    right: 0;
+
+    width: 16.5625%;
+    height: 3px;
+
+    background-color: $green;
+  }
 }
 
 .extra__list {
   @include reset-list;
+  margin-bottom: 39px;
 }
 
 .extra__gift {
+  position: relative;
+
+  padding: 187px 57px 42px 55px;
+
+  text-align: center;
+
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  &::before {
+    @include pseudo;
+    top: 65px;
+    left: 50%;
+
+    width: 55.5px;
+    height: 60px;
+
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    transform: translateX(-50%);
+  }
 }
 
 .extra__gift-text {
@@ -26,4 +61,90 @@
   line-height: 20px;
   font-family: "Arial", sans-serif;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    padding-top: 0;
+    padding-bottom: 77px;
+  }
+
+  .extra__title {
+    margin-top: -4px;
+    padding: 0 66px 69px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      @include pseudo;
+      top: 21px;
+      left: 0;
+
+      width: 3.646%;
+      height: 3px;
+
+      background-color: $green;
+    }
+
+
+    &::after {
+      top: 21px;
+
+      width: 42.578%;
+    }
+  }
+
+  .extra__list {
+    margin-bottom: 70px;
+  }
+
+  .extra__gift {
+    padding: 72px 115px 67px 423px;
+
+    text-align: left;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      left: 91px;
+
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__title {
+    padding: 9px 109px 69px;
+
+    &::before {
+      top: 31px;
+
+      width: 4.861%;
+    }
+
+    &::after {
+      top: 31px;
+
+      width: 66.458%;
+    }
+  }
+
+  .extra__gift {
+    width: 244px;
+    height: 288px;
+    margin-top: 2px;
+    padding: 187px 40px 20px;
+
+    text-align: center;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
 }

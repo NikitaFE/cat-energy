@@ -1,4 +1,51 @@
+.form-goal {
+  @include reset-fieldset;
+  margin: 0 -20px;
+  padding: 16px 20px 11px;
+
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form-goal__wrapper {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
 .form-goal__label {
+  display: block;
+  padding: 10px 46px;
+
   @include oswald-regular-dark(16px, 18px);
   text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .form-goal {
+    margin: 0 37px 30px 41px;
+    padding: 24px 26px 11px;
+
+    border: 1px solid #ededed;
+  }
+
+  .form-goal__wrapper {
+    margin-bottom: 13px;
+  }
+
+  .form-goal__label {
+    padding: 10px 60px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-goal {
+    margin: 0;
+    width: 570px;
+    height: 196px;
+  }
 }
