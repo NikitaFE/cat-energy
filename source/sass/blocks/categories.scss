@@ -191,7 +191,7 @@
     }
 
     &::before {
-      top: 48px;
+      top: 47px;
       left: 52px;
 
       width: 100px;
@@ -199,16 +199,16 @@
     }
 
     &:first-child::after {
-      top: 42px;
-      left: 67px;
+      top: 41px;
+      left: 66px;
 
       width: 70px;
       height: 97px;
     }
 
     &:nth-child(2)::after {
-      top: 70px;
-      left: 34px;
+      top: 69px;
+      left: 33px;
 
       width: 135px;
       height: 58px;

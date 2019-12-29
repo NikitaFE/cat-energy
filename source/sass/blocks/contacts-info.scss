@@ -4,7 +4,11 @@
   width: 100%;
   padding: 29px 20px 25px;
 
-  background-color: $white;
+  background-color: $bg-gray;
+
+  &--white {
+    background-color: $white;
+  }
 }
 
 .contacts-info__text {
@@ -24,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts-info {
-    padding: 63px 72px 60px;
+    padding: 63px 72px 58px;
   }
 
   .contacts-info__text {
@@ -54,6 +58,8 @@
   .contacts-info {
     width: 570px;
     padding: 64px 79px 57px 76px;
+
+    background-color: $white;
   }
 
   .contacts-info__address {
