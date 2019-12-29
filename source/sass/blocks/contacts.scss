@@ -16,20 +16,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 197px;
+  }
+
   .contacts__map {
-    height: 596px;
+    height: 400px;
+    padding-top: 0;
     overflow: hidden;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 0;
+  }
+
   .contacts__info {
     top: 96px;
     left: 110px;
   }
 
   .contacts__map {
-    padding-top: 0;
     height: 400px;
   }
 }
