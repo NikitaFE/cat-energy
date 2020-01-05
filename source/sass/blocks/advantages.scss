@@ -17,6 +17,9 @@
 .advantages__item {
   position: relative;
 
+  min-height: 60px;
+  margin-bottom: 20px;
+
   &::before {
     @include pseudo;
     top: -2px;
@@ -49,7 +52,6 @@
 
 .advantages__item-text {
   margin: 0;
-  margin-bottom: 26px;
   padding-left: 80px;
 
   @include arial-regular-dark-gray(14px, 18px);
@@ -126,7 +128,6 @@
 
   .advantages__item-text {
     width: 245px;
-    margin-bottom: 0;
     padding-left: 0;
 
     font-size: 16px;
