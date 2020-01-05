@@ -12,11 +12,17 @@
 }
 
 .result__text {
-  width: 270px;
+  width: 100%;
   margin: 0;
   margin-bottom: 25px;
+  padding-right: 3.125%;
 
   @include arial-regular-dark-gray(14px, 18px);
+}
+
+.result__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .result__values {
@@ -69,9 +75,11 @@
 
 @media (min-width: $tablet-width) {
   .result {
+    position: relative;
+
     padding: 43px 0 0;
 
-    background-color: $white;
+    background-color: transparent;
   }
 
   .result__title {
@@ -81,8 +89,8 @@
   }
 
   .result__text {
-    width: 700px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+    padding-right: 3.6458%;
 
     font-size: 16px;
     line-height: 24px;
@@ -92,13 +100,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 228px;
+    width: 708px;
+    margin: 0 0 228px;
   }
 
   .result__value-wrapper {
     width: 162px;
-    padding-top: 11px;
-    padding-bottom: 17px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 
     &:first-child {
       margin-right: 41px;
@@ -142,6 +151,20 @@
 @media (min-width: $desktop-width) {
   .result {
     padding-top: 24px;
+
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+
+      width: 100vw;
+      height: 462px;
+
+      background-image: linear-gradient(to right, $bg-gray 51%, #eaeaea 51%);
+
+      transform: translateX(-50%);
+    }
   }
 
   .result__title {
@@ -151,10 +174,6 @@
   .result__desktop-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 -110px;
-    padding: 0 110px;
-
-    background-image: linear-gradient(to right, $bg-gray 90%, #eaeaea 90%);
   }
 
   .result__left {
@@ -163,11 +182,13 @@
 
   .result__text {
     width: 435px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
+    padding-right: 0;
   }
 
   .result__wrapper {
     display: block;
+    width: auto;
     margin-bottom: 0;
   }
 
