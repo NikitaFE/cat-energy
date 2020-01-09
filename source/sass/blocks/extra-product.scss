@@ -103,6 +103,8 @@
 
   .extra-product__value {
     &:last-child {
+      width: 48px;
+
       text-align: left;
     }
   }

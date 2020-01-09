@@ -49,6 +49,14 @@
   text-transform: uppercase;
 }
 
+@-moz-document url-prefix() {
+  .form-extra {
+    &::before {
+      top: -45px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-extra {
     margin: 0 -30px;
@@ -87,6 +95,16 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @-moz-document url-prefix() {
+    .form-extra {
+      padding-bottom: 11px;
+
+      &::before {
+        top: -70px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -110,5 +128,11 @@
 
   .form-extra__label {
     padding: 10px 15px 10px 58px;
+  }
+
+  @-moz-document url-prefix() {
+    .form-extra {
+      padding-bottom: 18px;
+    }
   }
 }

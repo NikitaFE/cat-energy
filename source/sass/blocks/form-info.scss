@@ -11,17 +11,29 @@
     .form-info__label-text {
       margin-right: 14px;
     }
+
+    .form-info__field {
+      width: 229px;
+    }
   }
 
   &:nth-child(3) {
     .form-info__label-text {
       margin-right: 17px;
     }
+
+    .form-info__field {
+      width: 204px;
+    }
   }
 
   &:nth-child(4) {
     .form-info__label-text {
       margin-right: 16px;
+    }
+
+    .form-info__field {
+      width: 171px;
     }
   }
 }
@@ -86,6 +98,16 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @-moz-document url-prefix() {
+    .form-info__wrapper {
+      margin-bottom: 20px;
+    }
+
+    .form-info__field {
+      padding: 14px 18px 16px;
+    }
   }
 }
 
