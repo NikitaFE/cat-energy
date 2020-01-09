@@ -6,6 +6,10 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -185,22 +189,24 @@
         </div>
       </div>
       <a href="" class="contacts__map">
-        <img src="img/bg-map-mobile@1x.png"
-          alt="Карта. Наст можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."
-          class="contacts__map-image">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+            alt="Карта. Нас можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." width="320"
+            height="400">
+        </picture>
       </a>
     </section>
 
     <div class="footer__bottom">
       <div class="container">
-        <a href="" class="contacts__map">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-              alt="Карта. Нас можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." width="320"
-              height="400">
-          </picture>
+        <a href="" class="footer__logo">
+          <img src="img/logo-footer.svg" alt="Текстовый логотип магазина Кэт энерджи.">
         </a>
         <div class="social">
           <ul class="social__list">

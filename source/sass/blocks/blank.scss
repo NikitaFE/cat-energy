@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .blank {
-    padding-bottom: 42px;
+    padding-bottom: 41px;
   }
 
   .blank__title {
@@ -41,6 +41,10 @@
 @media (min-width: $desktop-width) {
   .blank {
     padding-bottom: 50px;
+  }
+
+  .blank__title {
+    margin-top: 153px;
   }
 
   .blank__text {

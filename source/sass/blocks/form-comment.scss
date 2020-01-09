@@ -44,6 +44,20 @@
   border: 1px solid #e6e6e6;
 }
 
+@-moz-document url-prefix("") {
+  .form-comment {
+    padding-bottom: 12px;
+
+    &::before {
+      top: -44px;
+    }
+  }
+
+  .form-comment__title {
+    margin-bottom: 12px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-comment {
     margin: 0 -30px 20px;
@@ -74,6 +88,16 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @-moz-document url-prefix("") {
+    .form-comment {
+      padding-bottom: 12px;
+
+      &::before {
+        top: -90px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,5 +114,11 @@
   .form-comment__field {
     width: 100%;
     margin: 0;
+  }
+
+  @-moz-document url-prefix("") {
+    .form-comment {
+      padding-bottom: 35px;
+    }
   }
 }
