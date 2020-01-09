@@ -49,7 +49,7 @@
   text-transform: uppercase;
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form-extra {
     &::before {
       top: -45px;
@@ -96,7 +96,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-extra {
       padding-bottom: 11px;
 
@@ -130,7 +130,7 @@
     padding: 10px 15px 10px 58px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-extra {
       padding-bottom: 18px;
     }

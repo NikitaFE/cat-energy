@@ -100,7 +100,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-info__wrapper {
       margin-bottom: 20px;
     }

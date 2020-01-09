@@ -44,7 +44,7 @@
   border: 1px solid #e6e6e6;
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form-comment {
     padding-bottom: 12px;
 
@@ -89,7 +89,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-comment {
       padding-bottom: 12px;
 
@@ -116,7 +116,7 @@
     margin: 0;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-comment {
       padding-bottom: 35px;
     }

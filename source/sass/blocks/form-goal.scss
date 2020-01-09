@@ -41,7 +41,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-goal {
       padding-bottom: 10px;
     }

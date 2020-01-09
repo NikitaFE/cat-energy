@@ -18,7 +18,6 @@
     background-color: $green;
 
     transform: translateX(-50%);
-
   }
 }
 
@@ -86,7 +85,7 @@
   border: 1px solid #e6e6e6;
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form-contacts {
     &::before {
       top: -68px;
@@ -150,7 +149,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-contacts {
       &::before {
         top: -90px;
@@ -189,7 +188,7 @@
     margin: 0;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-contacts__title {
       padding-top: 44px;
     }
