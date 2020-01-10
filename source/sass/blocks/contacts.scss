@@ -7,12 +7,29 @@
   top: 0;
   left: 0;
   z-index: 5;
+
+  &::before {
+    @include pseudo;
+    bottom: -192px;
+    left: 50%;
+
+    width: 62px;
+    height: 53px;
+
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-50%);
+  }
 }
 
 .contacts__map {
   display: block;
   height: 476px;
   padding-top: 76px;
+
+  overflow: hidden;
 }
 
 .contacts__map-image {
@@ -22,6 +39,15 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 197px;
+  }
+
+  .contacts__info {
+    &::before {
+      bottom: -252px;
+
+      width: 124px;
+      height: 106px;
+    }
   }
 
   .contacts__map {
@@ -41,6 +67,13 @@
     left: 50%;
 
     transform: translateX(-50%);
+
+    &::before {
+      bottom: 39px;
+      left: 928px;
+
+      transform: translateX(0);
+    }
   }
 
   .contacts__map {

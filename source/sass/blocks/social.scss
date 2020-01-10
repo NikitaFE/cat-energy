@@ -63,6 +63,7 @@
 @media (min-width: $tablet-width) {
   .social {
     position: absolute;
+    top: 56px;
     left: 50%;
 
     transform: translateX(-50%);
