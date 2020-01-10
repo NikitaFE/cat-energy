@@ -21,8 +21,14 @@
 }
 
 .slider__control-text {
+  padding: 0;
+
   @include oswald-regular-black(16px, 20px);
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .slider__control-range {
@@ -44,9 +50,11 @@
   display: block;
   width: 35px;
   height: 6px;
+  padding: 0;
 
   background-color: $green;
   border-radius: 3px;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,7 +92,31 @@
   }
 
   .slider__control-text {
+    position: relative;
+
     font-size: 20px;
+
+    &:hover {
+      &::before {
+        border-bottom: 1px solid #989898;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-bottom-color: transparent;
+      }
+    }
+
+    &::before {
+      @include pseudo;
+      bottom: -8px;
+      left: 0;
+
+      width: 100%;
+
+      border-bottom: 1px dotted #bebebe;
+    }
   }
 
   .slider__control-range {
@@ -107,6 +139,21 @@
     border: 1px solid #cfcfcf;
     border-radius: 50%;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
+
+    &:active {
+      border: 2px solid $green;
+
+      &::before {
+        top: 11px;
+        left: 11px;
+      }
+    }
 
     &::before {
       @include pseudo;

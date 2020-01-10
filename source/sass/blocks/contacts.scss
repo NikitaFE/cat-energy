@@ -38,7 +38,9 @@
 
   .contacts__info {
     top: 95px;
-    left: 110px;
+    left: 50%;
+
+    transform: translateX(-50%);
   }
 
   .contacts__map {
