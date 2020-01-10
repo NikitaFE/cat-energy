@@ -59,6 +59,22 @@
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    padding: 12px 14px 11px;
+
+    border-width: 2px;
+    border-color: $dark-gray;
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -98,6 +114,10 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &:focus {
+      padding: 8px 17px 10px;
+    }
   }
 
   @-moz-document url-prefix("") {

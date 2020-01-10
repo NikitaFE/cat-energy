@@ -41,12 +41,64 @@
 }
 
 .form-extra__label {
+  position: relative;
+
   display: block;
   margin-bottom: 12px;
   padding: 6px 46px;
 
   @include oswald-regular-dark(16px, 18px);
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      border-color: #bcbcbc;
+    }
+  }
+
+  &:focus {
+    &::before {
+      outline: 1px solid #000000;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid #cfcfcf;
+  }
+
+  &::after {
+    @include pseudo;
+    top: 1px;
+    left: 1px;
+
+    display: none;
+    width: 29px;
+    height: 29px;
+
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 21.1px 15.5px;
+    background-position: center center;
+  }
+}
+
+.form-extra__control:checked ~ .form-extra__label {
+  &::after {
+    display: block;
+  }
 }
 
 @-moz-document url-prefix("") {
@@ -94,6 +146,19 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      width: 39px;
+      height: 39px;
+    }
   }
 
   @-moz-document url-prefix("") {

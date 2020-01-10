@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 100%;
-  padding: 11px 15px;
+  padding: 10px 15px;
 
   font: inherit;
   font-weight: 400;
@@ -14,11 +14,32 @@
   font-family: "Oswald", sans-serif;
 
   background-color: $green;
-  border: none;
+  border: 1px solid #6fba41;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    border-color: #66ae39;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--gray {
     color: $dark-gray;
 
     background-color: $bg-gray;
+    border-color: #f3f3f3;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+      border-color: #ececec;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }

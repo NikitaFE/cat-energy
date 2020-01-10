@@ -11,6 +11,35 @@
   @include arial-regular-dark-gray(16px, 16px);
 }
 
+.copyright__logo {
+  position: relative;
+
+  width: 27px;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    .copyright__logo-icon {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo-icon {
+  position: absolute;
+  top: -3px;
+  left: -7px;
+
+  width: 41px;
+  height: 41px;
+
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     display: flex;
@@ -19,5 +48,15 @@
 
   .copyright__link {
     margin-right: 23px;
+  }
+
+  .copyright__logo-icon {
+    top: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__logo-icon {
+    top: -2px;
   }
 }
