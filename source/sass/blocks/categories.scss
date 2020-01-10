@@ -92,7 +92,7 @@
   text-transform: uppercase;
 
   &:hover {
-    &:after {
+    &::after {
       right: -45px;
 
       width: 34px;
