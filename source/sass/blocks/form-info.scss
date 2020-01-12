@@ -72,7 +72,10 @@
     outline: none;
   }
 
-  &:invalid {
+  &:required:invalid {
+    padding: 12px 14px 11px;
+
+    border-width: 2px;
     border-color: #ff8282;
   }
 }
@@ -115,7 +118,8 @@
     font-size: 20px;
     line-height: 20px;
 
-    &:focus {
+    &:focus,
+    &:required:invalid {
       padding: 8px 17px 10px;
     }
   }

@@ -32,6 +32,15 @@
   &--open .nav__burger-middle {
     background-color: transparent;
 
+    &--noscript {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        background-color: transparent;
+      }
+    }
+
     &::before {
       transform: rotate(45deg);
     }
@@ -52,7 +61,6 @@
   height: 2px;
 
   background-color: $black;
-
 
   transition: 0.3s linear;
 
@@ -79,6 +87,10 @@
 
 .nav__menu {
   @include reset-list;
+
+  &--close {
+    display: none;
+  }
 }
 
 .nav__menu-link {
@@ -90,7 +102,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $black;
 
   border-top: 1px solid #e6e6e6;
@@ -130,12 +142,34 @@
 
   .nav__menu {
     display: flex;
-    padding-top: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 450px;
+    padding-top: 18px;
+
+    li:not(:last-child) {
+      .nav__menu-link {
+        margin-right: 30px;
+      }
+
+      &:nth-child(1) {
+        .nav__menu-link {
+          margin-right: 34px;
+        }
+      }
+
+      &:nth-child(2) {
+        .nav__menu-link {
+          margin-right: 37px;
+        }
+      }
+    }
   }
 
   .nav__menu-link {
     position: relative;
 
+    margin-bottom: 15px;
     padding: 0;
 
     font-weight: 400;
@@ -155,26 +189,30 @@
       background-color: $green;
     }
   }
-
-  li {
-    &:nth-child(1) {
-      .nav__menu-link {
-        margin-right: 34px;
-      }
-    }
-
-    &:nth-child(2) {
-      .nav__menu-link {
-        margin-right: 37px;
-      }
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
   .nav__logo {
     width: 202px;
     height: 59.5px;
+  }
+
+  .nav__menu {
+    max-width: 590px;
+
+    li:not(:last-child) {
+      &:nth-child(1) {
+        .nav__menu-link {
+          margin-right: 35px;
+        }
+      }
+
+      &:nth-child(2) {
+        .nav__menu-link {
+          margin-right: 34px;
+        }
+      }
+    }
   }
 
   .nav__menu-link {
@@ -189,20 +227,6 @@
 
       &::before {
         background-color: $white;
-      }
-    }
-  }
-
-  li {
-    &:nth-child(1) {
-      .nav__menu-link {
-        margin-right: 35px;
-      }
-    }
-
-    &:nth-child(2) {
-      .nav__menu-link {
-        margin-right: 34px;
       }
     }
   }
