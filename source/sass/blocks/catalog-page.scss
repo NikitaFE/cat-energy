@@ -8,7 +8,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-page__title {
-    padding-top: 35px;
+    padding-top: 34px;
     padding-bottom: 95px;
 
     font-size: 60px;
@@ -18,5 +18,6 @@
 @media (min-width: $desktop-width) {
   .catalog-page__title {
     margin-top: 154px;
+    padding-bottom: 96px;
   }
 }

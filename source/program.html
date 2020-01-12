@@ -6,8 +6,13 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <script>
-    document.createElement( "picture" );
+    document.createElement("picture");
+
   </script>
   <script src="js/picturefill.js" async></script>
 </head>
@@ -31,7 +36,7 @@
         </a>
         <a class="nav__burger nav__burger--open">
           <span class="visually-hidden">Открыть меню</span>
-          <span class="nav__burger-middle"></span>
+          <span class="nav__burger-middle nav__burger-middle--noscript"></span>
         </a>
       </div>
       <ul class="nav__menu">
@@ -61,19 +66,19 @@
               <p class="form-info__wrapper">
                 <label class="form-info__label">
                   <span class="form-info__label-text">Имя:*</span>
-                  <input type="text" class="form-info__field" placeholder="Барсик">
+                  <input type="text" class="form-info__field" placeholder="Барсик" required>
                 </label>
               </p>
               <p class="form-info__wrapper">
                 <label class="form-info__label">
                   <span class="form-info__label-text">Вес (кг):*</span>
-                  <input type="text" class="form-info__field" placeholder="7">
+                  <input type="number" class="form-info__field" placeholder="7" required>
                 </label>
               </p>
               <p class="form-info__wrapper">
                 <label class="form-info__label">
                   <span class="form-info__label-text">Возраст (лет):</span>
-                  <input type="text" class="form-info__field" placeholder="7">
+                  <input type="number" class="form-info__field" placeholder="7">
                 </label>
               </p>
             </fieldset>
@@ -110,7 +115,7 @@
                 <p class="form-contacts__wrapper">
                   <label class="form-contacts__label">
                     <span class="form-contacts__label-text">E-mail:*</span>
-                    <input type="text" class="form-contacts__field" placeholder="kuklachev@gmail.com">
+                    <input type="email" class="form-contacts__field" placeholder="kuklachev@gmail.com" required>
                     <svg class="form-contacts__icon" width="17" height="13">
                       <use xlink:href="#icon-mail"></use>
                     </svg>
@@ -121,7 +126,7 @@
                 <p class="form-contacts__wrapper">
                   <label class="form-contacts__label">
                     <span class="form-contacts__label-text">Телефон:*</span>
-                    <input type="text" class="form-contacts__field" placeholder="8 (960) 900-60-90">
+                    <input type="tel" class="form-contacts__field" placeholder="8 (960) 900-60-90" required>
                     <svg class="form-contacts__icon" width="20" height="20">
                       <use xlink:href="#icon-phone"></use>
                     </svg>
@@ -145,7 +150,8 @@
             <ul class="form-extra__list">
               <li class="form-extra__item">
                 <p class="form-extra__wrapper">
-                  <input id="extra-first" name="extra-first" type="checkbox" class="visually-hidden form-extra__control" checked>
+                  <input id="extra-first" name="extra-first" type="checkbox" class="visually-hidden form-extra__control"
+                    checked>
                   <label for="extra-first" class="form-extra__label">
                     <span>Сахарозаменитель</span>
                   </label>
@@ -153,7 +159,8 @@
               </li>
               <li class="form-extra__item">
                 <p class="form-extra__wrapper">
-                  <input id="extra-second" name="extra-second" type="checkbox" class="visually-hidden form-extra__control">
+                  <input id="extra-second" name="extra-second" type="checkbox"
+                    class="visually-hidden form-extra__control">
                   <label for="extra-second" class="form-extra__label">
                     <span>Питьевая вода</span>
                   </label>
@@ -161,7 +168,8 @@
               </li>
               <li class="form-extra__item">
                 <p class="form-extra__wrapper">
-                  <input id="extra-third" name="extra-third" type="checkbox" class="visually-hidden form-extra__control">
+                  <input id="extra-third" name="extra-third" type="checkbox"
+                    class="visually-hidden form-extra__control">
                   <label for="extra-third" class="form-extra__label">
                     <span>Молоко</span>
                   </label>
@@ -169,7 +177,8 @@
               </li>
               <li class="form-extra__item">
                 <p class="form-extra__wrapper">
-                  <input id="extra-fourth" name="extra-fourth" type="checkbox" class="visually-hidden form-extra__control">
+                  <input id="extra-fourth" name="extra-fourth" type="checkbox"
+                    class="visually-hidden form-extra__control">
                   <label for="extra-fourth" class="form-extra__label">
                     <span>Витамины</span>
                   </label>
@@ -200,7 +209,8 @@
           </div>
         </div>
       </div>
-      <a href="" class="contacts__map">
+      <a href="https://yandex.ru/maps/-/CGx3qFy8" class="contacts__map">
+        <div id="map" class="contacts__map-api"></div>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -211,16 +221,16 @@
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-            alt="Карта. Нас можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." width="320"
-            height="400">
+            width="320" height="400"
+            alt="Карта. Нас можно найти по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </picture>
       </a>
     </section>
 
     <div class="footer__bottom">
       <div class="container">
-        <a href="" class="footer__logo">
-          <img width="128" height="24" src="img/logo-footer.svg" alt="Текстовый логотип магазина Кэт энерджи.">
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Текстовый логотип магазина Кэт энерджи.">
         </a>
         <div class="social">
           <ul class="social__list">
@@ -251,8 +261,8 @@
           </ul>
         </div>
         <div class="copyright">
-          <a href="" class="copyright__link">HTML Academy</a>
-          <a href="" class="copyright__logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">
             <svg class="copyright__logo-icon" width="60" height="60">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
@@ -262,6 +272,10 @@
     </div>
   </footer>
 
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
