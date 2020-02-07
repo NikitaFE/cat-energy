@@ -164,18 +164,9 @@
 
 @media (min-width: $desktop-width) {
   .result {
-    padding-top: 24px;
-  }
-
-  .result__title {
-    margin-bottom: 75px;
-  }
-
-  .result__desktop-wrapper {
     position: relative;
 
-    display: flex;
-    justify-content: space-between;
+    padding-top: 24px;
 
     &::before {
       @include pseudo;
@@ -183,13 +174,22 @@
       left: 50%;
       z-index: -1;
 
-      width: 100vw;
-      height: 100%;
+      width: 100%;
+      height: calc(100% - 159px);
 
       background-image: linear-gradient(to right, $bg-gray 51%, #eaeaea 51%);
 
       transform: translateX(-50%);
     }
+  }
+
+  .result__title {
+    margin-bottom: 75px;
+  }
+
+  .result__desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .result__left {
